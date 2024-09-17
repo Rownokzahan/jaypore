@@ -5,7 +5,7 @@ import Home from "../pages/Home";
 import About from "../pages/About/About";
 import Contact from "../pages/Contact/contact";
 import NotFound from "../pages/Error/NotFound";
-import StoreLocator from "../pages/StoreLocator/StoreLocator";
+import StoreLocator from "../pages/StoreLocator";
 
 const router = createBrowserRouter([
   {
