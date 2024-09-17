@@ -1,0 +1,50 @@
+/* Override Slick Carousel default arrow styles */
+.slick-prev::before,
+.slick-next::before {
+  display: none; /* Remove default content */
+}
+
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+  color: black;;
+  outline: none;
+  background: white;
+}
+
+/* Custom arrow styles */
+.custom-prev,
+.custom-next {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  opacity: 0.5;
+  color: black;
+  width: 30px;
+  height: 30px;
+  z-index: 1;
+  font-size: 14px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.custom-prev {
+  left: 10px;
+}
+
+.custom-next {
+  right: 10px;
+}
+
+.slick-dots li {
+  color: #e8c1a8;
+  margin: 0;
+}
+
+.slick-dots li.slick-active {
+  color: #bb4125;
+}
