@@ -20,3 +20,15 @@ body {
 .hide-scrollable::-webkit-scrollbar {
   display: none; /* Chrome, Safari, and Opera */
 }
+
+/* Chrome, Safari, Edge, Opera */
+.hide-number-spinner::-webkit-outer-spin-button,
+.hide-number-spinner::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.hide-number-spinner[type="number"] {
+  -moz-appearance: textfield;
+}

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import DropdownSelector from "./DropdownSelector";
+import DropdownSelector from "../../components/dropdown/DropdownSelector";
 import storesData from "../../data/stores";
 import { useState } from "react";
 import StoreList from "./StoreList";
@@ -52,7 +52,7 @@ const StoreLocator = () => {
 
         {/* State and City Dropdown */}
         <div className="flex flex-col gap-4 lg:flex-row lg:gap-0 lg:items-center">
-          <div className="space-y-2">
+          <div className="w-full lg:w-52 space-y-2">
             <label htmlFor="state" className="uppercase text-lg mb-2">
               STATE
             </label>
@@ -64,7 +64,7 @@ const StoreLocator = () => {
             />
           </div>
 
-          <div className="space-y-2">
+          <div className="w-full lg:w-52 space-y-2">
             <label htmlFor="city" className="uppercase text-lg mb-2">
               CITY
             </label>

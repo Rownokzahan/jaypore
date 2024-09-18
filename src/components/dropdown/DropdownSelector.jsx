@@ -2,11 +2,11 @@ import { useState, useRef, useEffect } from "react";
 import { TiArrowSortedDown } from "react-icons/ti";
 
 const DropdownSelector = ({
-  selected, 
+  selected,
   list,
   onSelect,
   defaultText = "Select",
-  disabled,
+  disabled = false,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef(null);
@@ -44,7 +44,7 @@ const DropdownSelector = ({
   return (
     <div
       ref={dropdownRef}
-      className="w-full lg:w-[200px] relative bg-background-light"
+      className="w-full relative bg-background-light"
       aria-label="Dropdown selector"
     >
       {/* Button to toggle dropdown */}
@@ -57,11 +57,11 @@ const DropdownSelector = ({
           isOpen && "outline outline-2 outline-dark-deep rounded relative z-10"
         } ${
           disabled
-            ? "bg-gray-200 bg-opacity-50 cursor-default"
+            ? "bg-gray-200 bg-opacity-50 text-gray-400 cursor-default"
             : "bg-background-light"
         }`}
       >
-        {selected || defaultText}
+        <span className="truncate">{selected || defaultText}</span>
         {/* Dropdown arrow icon */}
         <TiArrowSortedDown
           className={`${isOpen ? "rotate-180" : ""} ${

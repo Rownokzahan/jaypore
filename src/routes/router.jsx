@@ -6,6 +6,7 @@ import About from "../pages/About/About";
 import Contact from "../pages/Contact/contact";
 import NotFound from "../pages/Error/NotFound";
 import StoreLocator from "../pages/StoreLocator";
+import CustomerSupport from "../pages/CustomerSupport";
 
 const router = createBrowserRouter([
   {
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
           {
             path: "store-locator",
             element: <StoreLocator />,
+          },
+          {
+            path: "customer-support",
+            element: <CustomerSupport />,
           },
         ],
       },

@@ -6,17 +6,17 @@ import { RiCustomerService2Line } from "react-icons/ri";
 const ServiceLinks = () => {
   return (
     <div className="flex items-center">
-      <Link className="flex items-center gap-1" to={"/store-locator"}>
+      <Link to={"/store-locator"} className="flex items-center gap-1">
         <LuStore className="ms-2 text-xl" />
         <span>Locate Stores</span>
       </Link>
       <span className="ms-2">|</span>
-      <Link className="flex items-center gap-1" to={"/"}>
+      <Link to={"/"} className="flex items-center gap-1">
         <FiPackage className="ms-2 text-xl" />
         <span>Track Orders</span>
       </Link>
       <span className="ms-2">|</span>
-      <Link className="flex items-center gap-1" to={"/"}>
+      <Link to={"customer-support"} className="flex items-center gap-1">
         <RiCustomerService2Line className="ms-2 text-xl" />
         <span>Customer Support</span>
       </Link>

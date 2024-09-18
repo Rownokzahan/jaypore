@@ -3,7 +3,7 @@ import { RiSecurePaymentLine } from "react-icons/ri";
 import { BsPatchCheck } from "react-icons/bs";
 import { MdOutlineCurrencyExchange } from "react-icons/md";
 import ExpandableLinks from "./ExpandableLinks";
-import SocialIcons from "../SocialIcons";
+import SocialIcons from "../../SocialIcons";
 
 const FooterMobile = () => {
   return (

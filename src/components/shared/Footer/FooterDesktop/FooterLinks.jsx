@@ -1,6 +1,6 @@
 import footerData from "../../../../data/footerData ";
 import { Link } from "react-router-dom";
-import SocialIcons from "../SocialIcons";
+import SocialIcons from "../../SocialIcons";
 
 const FooterLinks = () => {
   return (
