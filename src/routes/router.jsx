@@ -7,6 +7,7 @@ import Contact from "../pages/Contact/contact";
 import NotFound from "../pages/Error/NotFound";
 import StoreLocator from "../pages/StoreLocator";
 import CustomerSupport from "../pages/CustomerSupport";
+import ProductCollection from "../pages/ProductCollection";
 
 const router = createBrowserRouter([
   {
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
           {
             path: "customer-support",
             element: <CustomerSupport />,
+          },
+          {
+            path: "product-collection",
+            element: <ProductCollection />,
           },
         ],
       },

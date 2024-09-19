@@ -23,7 +23,7 @@ export default {
         primary: {
           dark: "#bb4125",
           DEFAULT: "#bf7154",
-          light: "#fffaf7",
+          light: "#e8c1a8",
         },
         background: {
           light: "#f9f6f2",
