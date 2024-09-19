@@ -24,7 +24,7 @@ const SearchBar = () => {
               className="w-full focus:outline-none bg-transparent"
             />
             {/* Triangle pointer for search */}
-            <span className="w-3 h-3 bg-primary-light border border-e-0 border-b-0 absolute right-20  -top-5 z-10 rotate-45"></span>
+            <span className="w-3 h-3 bg-background-light border border-e-0 border-b-0 absolute right-20  -top-5 z-10 rotate-45"></span>
           </div>
         </div>
       )}

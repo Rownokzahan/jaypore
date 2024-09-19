@@ -12,7 +12,7 @@ const IconMenu = () => {
 
         {/* Dropdown menu shown on hover */}
         <div className="absolute left-1/2 -translate-x-1/2 z-10 pt-4 hidden group-hover:block">
-          <ul className="p-4 border bg-primary-light space-y-3 w-36 relative">
+          <ul className="p-4 border bg-background-light space-y-3 w-36 relative">
             <li>
               <Link
                 to={"/"}
@@ -31,7 +31,7 @@ const IconMenu = () => {
             </li>
           </ul>
           {/* Triangle pointer for dropdown menu */}
-          <span className="w-4 h-4 bg-primary-light border border-e-0 border-b-0 absolute left-1/2 -translate-x-1/2 top-2 z-30 rotate-45"></span>
+          <span className="w-4 h-4 bg-background-light border border-e-0 border-b-0 absolute left-1/2 -translate-x-1/2 top-2 z-30 rotate-45"></span>
         </div>
       </div>
 

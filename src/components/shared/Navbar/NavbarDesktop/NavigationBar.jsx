@@ -17,7 +17,7 @@ const NavigationBar = () => {
 
             {/* Dropdown for categories (if available) */}
             {link.categories && (
-              <div className="absolute top-full w-screen left-0 px-8 pt-4 pb-8 border-t bg-background-light shadow-lg z-10 hidden group-hover:block">
+              <div className="absolute top-full w-screen left-0 px-8 pt-4 pb-8 bg-background-light shadow-lg z-10 hidden group-hover:block">
                 <div className="flex flex-wrap gap-12">
                   {link.categories.map((category, catIndex) => (
                     <div key={catIndex} className="space-y-2">
