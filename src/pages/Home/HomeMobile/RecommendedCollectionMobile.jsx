@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import ProductCard from "../../../components/card/ProductCard";
 import recommendedData from "../../../data/recommendedData";
+import RecommendedCard from "../../../components/card/RecommendedCard";
 
 const RecommendedCollectionMobile = () => {
   return (
@@ -14,7 +14,7 @@ const RecommendedCollectionMobile = () => {
 
       <div className="flex hide-scrollable">
         {recommendedData?.map((product, index) => (
-          <ProductCard key={index} product={product} />
+          <RecommendedCard key={index} product={product} />
         ))}
       </div>
     </section>

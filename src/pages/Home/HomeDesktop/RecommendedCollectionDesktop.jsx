@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import ProductCard from "../../../components/card/ProductCard";
 import Carousel from "../../../components/carousel/Carousel";
 import recommendedData from "../../../data/recommendedData";
+import RecommendedCard from "../../../components/card/RecommendedCard";
 
 const RecommendedCollectionDesktop = () => {
   return (
@@ -21,7 +21,7 @@ const RecommendedCollectionDesktop = () => {
           infinite={false}
         >
           {recommendedData?.map((product, index) => (
-            <ProductCard key={index} product={product} />
+            <RecommendedCard key={index} product={product} />
           ))}
         </Carousel>
       </div>
