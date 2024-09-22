@@ -24,7 +24,8 @@ const Carousel = ({
   displayIndicators = true,
   slidesToShow = 1,
   autoplay = true,
-  infinite= true
+  infinite = true,
+  showArrows = true,
 }) => {
   const settings = {
     dots: displayIndicators,
@@ -35,8 +36,6 @@ const Carousel = ({
     autoplay: autoplay,
     autoplaySpeed: 2000,
     pauseOnHover: true,
-    nextArrow: <NextArrow />, // Custom next arrow
-    prevArrow: <PrevArrow />, // Custom prev arrow
 
     // Custom dot indicators
     appendDots: (dots) => (
@@ -62,6 +61,12 @@ const Carousel = ({
       </div>
     ),
   };
+
+  // Add custom arrows if showArrows is true
+  if (showArrows) {
+    settings.nextArrow = <NextArrow />;
+    settings.prevArrow = <PrevArrow />;
+  }
 
   return <Slider {...settings}>{children}</Slider>;
 };

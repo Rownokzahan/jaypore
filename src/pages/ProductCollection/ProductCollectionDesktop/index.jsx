@@ -1,7 +1,10 @@
 import { useState } from "react";
 import DropdownSelector from "../../../components/dropdown/DropdownSelector";
-import FilterSidebar from "./FilterSidebar";
 import sortData from "../../../data/sortData";
+import FilterSidebarDesktop from "./FilterSidebarDesktop";
+import productData from "../../../data/productData.js";
+import ProductCardDesktop from "../../../components/card/ProductCard/ProductCardDesktop.jsx";
+import Pagination from "../shared/Pagination.jsx";
 
 const ProductCollectionDesktop = () => {
   const [selectedSort, setSelectedSort] = useState("Popular");
@@ -13,8 +16,8 @@ const ProductCollectionDesktop = () => {
   };
 
   return (
-    <section className="relative">
-      <div className="py-2 flex items-center justify-between sticky top-[139px] bg-background-light">
+    <section className="container !pt-0 relative">
+      <div className="py-2 flex items-center justify-between sticky top-[139px] z-10 bg-background-light">
         <h3 className="uppercase text-xl font-bold">Filter by</h3>
         <div className="flex items-center gap-2">
           <h4 className="uppercase text-nowrap text-lg font-semibold">
@@ -33,9 +36,17 @@ const ProductCollectionDesktop = () => {
 
       <div className="grid grid-cols-4 gap-8">
         <div className="col-span-1">
-          <FilterSidebar />
+          <FilterSidebarDesktop />
         </div>
-        <div className="col-span-3 grid">products</div>
+        <div className="col-span-3">
+          <div className="grid grid-cols-3 gap-2 mt-6">
+            {productData?.map((product) => (
+              <ProductCardDesktop key={product.id} product={product} />
+            ))}
+          </div>
+
+          <Pagination totalProducts={1216} viewedProducts={24} />
+        </div>
       </div>
     </section>
   );

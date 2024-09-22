@@ -7,26 +7,28 @@ const ProductCollection = () => {
   const { isDesktopScreen } = useScreenSize();
 
   return (
-    <div className="container">
-      {/* Breadcrumb should be dynmic for this page */}
+    <>
+      <div className="container">
+        {/* Breadcrumb should be dynmic for this page */}
+        {/* Breadcrumb */}
+        <div>
+          <ul className="flex gap-2 divide-dark text-dark">
+            <li>
+              <Link to={`/`}>Home</Link>
+            </li>
+            {">"}
+            <li className="text-dark-deep">
+              <Link to={`product-collection`}>{"Product Collection"}</Link>
+            </li>
+          </ul>
+        </div>
 
-      {/* Breadcrumb */}
-      <div className="mb-6">
-        <ul className="flex gap-2 divide-dark text-dark">
-          <li>
-            <Link to={`/`}>Home</Link>
-          </li>
-          {">"}
-          <li className="text-dark-deep">
-            <Link to={`product-collection`}>{"Product Collection"}</Link>
-          </li>
-        </ul>
-      </div>
-
-      <div className="mb-4">
-        <h3 className="text-lg">
-          {"Sarees for Women"} - <span className="text-base text-dark">{1862} products</span>
-        </h3>
+        <div className="mt-4">
+          <h3 className="text-lg">
+            {"Sarees for Women"} -{" "}
+            <span className="text-base text-dark">{1862} products</span>
+          </h3>
+        </div>
       </div>
 
       {isDesktopScreen ? (
@@ -34,7 +36,7 @@ const ProductCollection = () => {
       ) : (
         <ProductCollectionMobile />
       )}
-    </div>
+    </>
   );
 };
 

@@ -4,7 +4,7 @@ import { IoIosArrowForward } from "react-icons/io";
 import { MdCheckBox, MdCheckBoxOutlineBlank } from "react-icons/md";
 import filtersData from "../../../data/filtersData";
 
-const FilterSidebar = () => {
+const FilterSidebarDesktop = () => {
   const [expandedFilters, setExpandedFilters] = useState({});
   const [appliedFilters, setAppliedFilters] = useState([]);
   const heightRefs = useRef({});
@@ -137,4 +137,4 @@ const FilterSidebar = () => {
   );
 };
 
-export default FilterSidebar;
+export default FilterSidebarDesktop;
