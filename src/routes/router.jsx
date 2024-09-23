@@ -8,6 +8,7 @@ import NotFound from "../pages/Error/NotFound";
 import StoreLocator from "../pages/StoreLocator";
 import CustomerSupport from "../pages/CustomerSupport";
 import ProductCollection from "../pages/ProductCollection";
+import Product from "../pages/Product";
 
 const router = createBrowserRouter([
   {
@@ -43,6 +44,13 @@ const router = createBrowserRouter([
           {
             path: "product-collection",
             element: <ProductCollection />,
+          },
+          {
+            path: "product-collection",
+            element: <ProductCollection />,
+          },          {
+            path: "product",
+            element: <Product />,
           },
         ],
       },
