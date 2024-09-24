@@ -33,11 +33,14 @@ body {
   -moz-appearance: textfield;
 }
 
+.btn{
+  @apply w-full py-2 rounded border font-semibold text-lg text-center
+}
 
 .btn-primary{
-  @apply w-full py-2 rounded text-lg font-semibold text-center bg-primary-dark text-background-light
+  @apply btn border-primary-dark bg-primary-dark text-background-light
 }
 
 .btn-primary-outline{
-  @apply w-full py-2 rounded text-lg font-semibold text-center border border-primary-dark text-primary-dark
+  @apply btn border-primary-dark text-primary-dark
 }

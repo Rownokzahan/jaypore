@@ -1,4 +1,4 @@
-import Accordion from "../../../components/accordion/Accordion";
+import Accordion from "../../components/accordion/Accordion";
 
 const ProductDetails = () => {
   return (

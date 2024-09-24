@@ -1,6 +1,6 @@
-import Carousel from "../../../components/carousel/Carousel";
+import Carousel from "../../components/carousel/Carousel";
 
-const ProductImages = ({images}) => {
+const ProductImagesDesktop = ({images}) => {
     return (
       <div>
         {images?.length !== 0 ? (
@@ -25,4 +25,4 @@ const ProductImages = ({images}) => {
     );
 };
 
-export default ProductImages;
+export default ProductImagesDesktop;
