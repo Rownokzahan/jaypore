@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 import "../../styles/carousel.css";
+import { useRef } from "react";
 
 // Custom Previous Arrow
 const PrevArrow = ({ className, style, onClick }) => (
@@ -26,16 +27,25 @@ const Carousel = ({
   autoplay = true,
   infinite = true,
   showArrows = true,
+  autoplayOnHover = false,
 }) => {
+  let sliderRef = useRef(null);
+  const play = () => {
+    sliderRef.slickPlay();
+  };
+  const pause = () => {
+    sliderRef.slickPause();
+  };
+
   const settings = {
     dots: displayIndicators,
     infinite: infinite,
     speed: 500,
     slidesToShow: slidesToShow,
     slidesToScroll: 1,
-    autoplay: autoplay,
+    autoplay: autoplayOnHover ? false : autoplay,
     autoplaySpeed: 2000,
-    pauseOnHover: true,
+    pauseOnHover: autoplayOnHover ? false : true,
 
     // Custom dot indicators
     appendDots: (dots) => (
@@ -68,7 +78,17 @@ const Carousel = ({
     settings.prevArrow = <PrevArrow />;
   }
 
-  return <Slider {...settings}>{children}</Slider>;
+  return (
+    <div
+      className={`relative ${displayIndicators ? "pb-12" : "pb-0"}`}
+      onMouseEnter={autoplayOnHover ? play : undefined}
+      onMouseLeave={autoplayOnHover ? pause : undefined}
+    >
+      <Slider ref={(slider) => (sliderRef = slider)} {...settings}>
+        {children}
+      </Slider>
+    </div>
+  );
 };
 
 export default Carousel;

@@ -10,7 +10,12 @@ const ProductCardDesktop = ({ product }) => {
       <Link to={`/product-collection`} className="relative">
         <div className="w-full relative overflow-hidden h-80">
           {images.length !== 0 ? (
-            <Carousel displayIndicators={false} slidesToShow={1} showArrows={false}>
+            <Carousel
+              displayIndicators={false}
+              slidesToShow={1}
+              showArrows={false}
+              autoplayOnHover={true}
+            >
               {images?.map((item) => (
                 <img
                   key={item}
