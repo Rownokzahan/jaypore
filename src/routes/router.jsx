@@ -9,6 +9,7 @@ import StoreLocator from "../pages/StoreLocator";
 import CustomerSupport from "../pages/CustomerSupport";
 import ProductCollection from "../pages/ProductCollection";
 import Product from "../pages/Product";
+import Blog from "../pages/Blog";
 
 const router = createBrowserRouter([
   {
@@ -48,9 +49,14 @@ const router = createBrowserRouter([
           {
             path: "product-collection",
             element: <ProductCollection />,
-          },          {
+          },
+          {
             path: "product",
             element: <Product />,
+          },
+          {
+            path: "blog",
+            element: <Blog />,
           },
         ],
       },

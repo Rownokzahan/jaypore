@@ -105,7 +105,7 @@ const menuData = [
   },
   {
     title: "Blog",
-    url: "#",
+    url: "blog",
   },
   {
     title: "Craft",
