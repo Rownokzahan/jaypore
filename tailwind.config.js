@@ -31,7 +31,7 @@ export default {
         },
         dark: {
           light: "#dcdbdb",
-          DEFAULT: "#616161",
+          DEFAULT: "#717171",
           deep: "#212121",
         },
       },

@@ -10,6 +10,7 @@ import CustomerSupport from "../pages/CustomerSupport";
 import ProductCollection from "../pages/ProductCollection";
 import Product from "../pages/Product";
 import Blog from "../pages/Blog";
+import Cart from "../pages/Cart";
 
 const router = createBrowserRouter([
   {
@@ -53,6 +54,10 @@ const router = createBrowserRouter([
           {
             path: "product",
             element: <Product />,
+          },
+          {
+            path: "cart",
+            element: <Cart />,
           },
           {
             path: "blog",
