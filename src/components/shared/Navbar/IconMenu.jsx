@@ -2,8 +2,11 @@ import { CgProfile } from "react-icons/cg";
 import { FiHeart } from "react-icons/fi";
 import { BsHandbag } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import MiniCart from "./NavbarDesktop/MiniCart";
+import { useScreenSize } from "../../../hooks/useScreenSize";
 
 const IconMenu = () => {
+  const { isDesktopScreen } = useScreenSize();
   return (
     <>
       {/* Profile icon with dropdown menu for login and sign up options */}
@@ -41,12 +44,13 @@ const IconMenu = () => {
       </Link>
 
       {/* Handbag icon*/}
-      <Link to={"cart"} className="relative">
+      <Link to={"cart"} className="relative group">
         <BsHandbag />
         {/* Badge indicating item count */}
         <span className="w-4 h-4 p-2 mt-7 border border-white rounded-full absolute -bottom-2 left-2 flex items-center justify-center bg-primary text-white text-xs">
           {1}
         </span>
+        {isDesktopScreen && <MiniCart />}
       </Link>
     </>
   );
