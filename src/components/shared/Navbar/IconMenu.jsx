@@ -48,14 +48,16 @@ const IconMenu = () => {
       </Link>
 
       {/* Handbag icon*/}
-      <Link to={"cart"} className="relative group">
-        <BsHandbag />
-        {/* Badge indicating item count */}
-        <span className="w-4 h-4 p-2 mt-7 border border-white rounded-full absolute -bottom-2 left-2 flex items-center justify-center bg-primary text-white text-xs">
-          {1}
-        </span>
+      <div className="relative group">
+        <Link to={"cart"} className="relative">
+          <BsHandbag />
+          {/* Badge indicating item count */}
+          <span className="w-4 h-4 p-2 mt-7 border border-white rounded-full absolute -bottom-2 left-2 flex items-center justify-center bg-primary text-white text-xs">
+            {1}
+          </span>
+        </Link>
         {isDesktopScreen && <MiniCart />}
-      </Link>
+      </div>
     </>
   );
 };
