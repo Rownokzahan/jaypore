@@ -3,7 +3,8 @@ import PlaceOrderButton from "../../components/button/PlaceOrderButton";
 import CartCard from "../../components/card/CartCard";
 import productData from "../../data/productData";
 import OrderSummary from "./OrderSummary";
-import TopPicks from "./TopPicks";
+import ProductShowcase from "../../components/shared/ProductShowcase";
+import similarProductsData from "../../data/similarProductsData";
 
 const Cart = () => {
 
@@ -57,7 +58,11 @@ const handleScrollToOrderSummary = () => {
         </div>
       </section>
 
-      <TopPicks />
+      {/* Top Pick */}
+      <ProductShowcase
+        title="Top Picks For You"
+        products={similarProductsData}
+      />
     </>
   );
 };

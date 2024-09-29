@@ -1,6 +1,4 @@
 import { Link } from "react-router-dom";
-import SimilarProducts from "./SimilarProducts";
-import PeopleViewedProducts from "./PeopleViewedProducts";
 import { useState } from "react";
 import ProductDetails from "./ProductDetails";
 import ProductInfo from "./ProductInfo";
@@ -8,6 +6,8 @@ import SizeSelector from "./SizeSelector";
 import ProductImagesDesktop from "./ProductImagesDesktop";
 import ProductImagesMobile from "./ProductImagesMobile";
 import WishlistButton from "../../components/button/WishListButton";
+import ProductShowcase from "../../components/shared/ProductShowcase";
+import similarProductsData from "../../data/similarProductsData";
 
 const product = {
   id: "39575662",
@@ -64,7 +64,6 @@ const Product = () => {
           </li>
         </ul>
       </div>
-
       {/* For larger screen */}
       <div className="container !pt-0 hidden lg:flex lg:gap-12">
         <div className="w-[60%]">
@@ -119,8 +118,17 @@ const Product = () => {
         </div>
       </div>
 
-      <SimilarProducts />
-      <PeopleViewedProducts />
+      {/* Similar Products */}
+      <ProductShowcase
+        title="Similar Products"
+        products={similarProductsData}
+      />
+
+      {/* People Also Viewed */}
+      <ProductShowcase
+        title="People Also Viewed"
+        products={similarProductsData}
+      />
     </>
   );
 };
