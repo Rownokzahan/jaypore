@@ -11,6 +11,7 @@ import ProductCollection from "../pages/ProductCollection";
 import Product from "../pages/Product";
 import Blog from "../pages/Blog";
 import Cart from "../pages/Cart";
+import Wishlist from "../pages/Wishlist";
 
 const router = createBrowserRouter([
   {
@@ -48,16 +49,16 @@ const router = createBrowserRouter([
             element: <ProductCollection />,
           },
           {
-            path: "product-collection",
-            element: <ProductCollection />,
-          },
-          {
             path: "product",
             element: <Product />,
           },
           {
             path: "cart",
             element: <Cart />,
+          },
+          {
+            path: "wishlist",
+            element: <Wishlist />,
           },
           {
             path: "blog",
