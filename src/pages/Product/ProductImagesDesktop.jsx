@@ -1,4 +1,5 @@
 import { useState } from "react";
+import ImageZoomer from "./ImageZoomer";
 
 const ProductImagesDesktop = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -43,11 +44,12 @@ const ProductImagesDesktop = ({ images }) => {
       </div>
 
       <div className="relative flex-1">
-        <img
-          src={images[currentIndex]}
-          alt={`Product Image ${currentIndex + 1}`}
-          className="w-full h-full object-cover"
-        />
+        <div>
+          <ImageZoomer
+            imageSrc={images[currentIndex]}
+            imageAlt={`Product Image ${currentIndex + 1}`}
+          />
+        </div>
 
         {/* Prev arrow */}
         <button
