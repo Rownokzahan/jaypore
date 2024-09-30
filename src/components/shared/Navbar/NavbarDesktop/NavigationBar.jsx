@@ -4,9 +4,9 @@ import menuData from "../../../../data/menuData";
 const NavigationBar = () => {
   return (
     <div className="relative text-base">
-      <ul className="flex items-center justify-center gap-8 px-4 border-y">
+      <ul className="flex items-center justify-center px-4 border-y">
         {menuData.map((link, index) => (
-          <li key={index} className="group">
+          <li key={index} className="group px-4">
             {/* Main menu link */}
             <Link to={link.url} className="py-4 block font-semibold relative">
               {link.title}
