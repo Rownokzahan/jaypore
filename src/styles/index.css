@@ -38,7 +38,7 @@ body {
 }
 
 .btn-primary{
-  @apply btn border-primary-dark bg-primary-dark text-background-light
+  @apply btn border-primary-dark bg-primary-dark disabled:bg-[#0000001F] disabled:border-transparent text-background-light
 }
 
 .btn-primary-outline{

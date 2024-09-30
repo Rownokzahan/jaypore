@@ -2,7 +2,8 @@ import IconMenu from "../IconMenu";
 import ServiceLinks from "./ServiceLinks";
 import fasionImage from "../../../../assets/images/aditya-birala.webp";
 import SearchBar from "./SearchBar";
-import Logo from "../Logo";
+import Logo from "../../Logo";
+
 
 const TopBar = () => {
   return (

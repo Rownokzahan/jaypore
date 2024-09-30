@@ -1,9 +1,9 @@
 import { useState } from "react";
 import IconMenu from "../IconMenu";
-import Logo from "../Logo";
 import { IoMenu } from "react-icons/io5";
 import SearchBar from "./SearchBar";
 import SidebarMenu from "./SidebarMenu";
+import Logo from "../../Logo";
 
 const NavbarMobile = () => {
   const [menuOpen, setMenuOpen] = useState(false); // State to toggle menu
