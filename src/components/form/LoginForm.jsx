@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { PiEye, PiEyeClosed } from "react-icons/pi";
 import useAuthModal from "../../hooks/useAuthModal";
+import { MdCheckBox, MdCheckBoxOutlineBlank } from "react-icons/md";
 
 const LoginForm = () => {
   const { setForgotPasswordModalVisibility, setLoginSignupModalVisibility } =
@@ -52,6 +53,14 @@ const LoginForm = () => {
             Forgot Password?
           </button>
         </div>
+
+        <label htmlFor="rememberMe" className="flex gap-2 items-center">
+          <input type="checkbox" id="rememberMe" className="hidden peer" />
+          <MdCheckBox className="text-primary text-xl hidden peer-checked:block" />
+          <MdCheckBoxOutlineBlank className="text-primary-light text-xl peer-checked:hidden" />
+
+          <span>Remember me</span>
+        </label>
       </div>
       <div className="flex justify-between items-center">
         <button type="submit" className="btn-primary">
