@@ -7,7 +7,7 @@ const ProductCardDesktop = ({ product }) => {
 
   return (
     <div className="relative group" title={name}>
-      <Link to={`/product-collection`} className="relative">
+      <Link to={`/product`} className="relative">
         <div className="w-full relative overflow-hidden h-80">
           {images.length !== 0 ? (
             <Carousel

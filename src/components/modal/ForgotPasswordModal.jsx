@@ -21,7 +21,7 @@ const ForgotPasswordModal = () => {
       onClose={() => setForgotPasswordModalVisibility(false)}
     >
       <div className="my-12">
-        <div className="px-8 space-y-2">
+        <div className="px-6 space-y-2">
           <div className="w-max mx-auto">
             <Logo />
           </div>
