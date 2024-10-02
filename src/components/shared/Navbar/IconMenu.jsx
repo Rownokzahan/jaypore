@@ -8,11 +8,7 @@ import useAuthModal from "../../../hooks/useAuthModal";
 
 const IconMenu = () => {
   const { isDesktopScreen } = useScreenSize();
-  const { setModalVisibility } = useAuthModal();
-
-    const openModal = () => {
-      setModalVisibility(true); // Open the modal
-    };
+  const { setLoginSignupModalVisibility } = useAuthModal();
 
   return (
     <>
@@ -25,7 +21,7 @@ const IconMenu = () => {
           <ul className="p-4 border bg-background-light space-y-3 w-36 relative">
             <li>
               <button
-                onClick={openModal}
+                onClick={() => setLoginSignupModalVisibility(true)}
                 className="w-full block py-2 border border-primary rounded text-lg font-semibold text-primary text-center"
               >
                 Login
@@ -33,7 +29,7 @@ const IconMenu = () => {
             </li>
             <li>
               <button
-                onClick={openModal}
+                onClick={() => setLoginSignupModalVisibility(true)}
                 className="w-full block py-2 border border-primary rounded text-lg font-semibold text-primary text-center"
               >
                 Sign Up
