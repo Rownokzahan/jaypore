@@ -1,14 +1,14 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './styles/index.css'
-import { ThemeProvider } from './contexts/ThemeContext.jsx';
 import { RouterProvider } from 'react-router-dom';
 import router from './routes/router.jsx';
+import { AuthModalProvider } from './contexts/AuthModalContext.jsx';
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <ThemeProvider>
+    <AuthModalProvider>
       <RouterProvider router={router} />
-    </ThemeProvider>
+    </AuthModalProvider>
   </StrictMode>
 );

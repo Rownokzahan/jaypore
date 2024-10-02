@@ -1,7 +1,7 @@
 const menuData = [
   {
     title: "Jaypore Label",
-    url: "#",
+    url: "product-collection",
   },
   {
     title: "Women",

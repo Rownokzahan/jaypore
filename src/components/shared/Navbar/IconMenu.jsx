@@ -4,9 +4,16 @@ import { BsHandbag } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import MiniCart from "./NavbarDesktop/MiniCart";
 import { useScreenSize } from "../../../hooks/useScreenSize";
+import useAuthModal from "../../../hooks/useAuthModal";
 
 const IconMenu = () => {
   const { isDesktopScreen } = useScreenSize();
+  const { setModalVisibility } = useAuthModal();
+
+    const openModal = () => {
+      setModalVisibility(true); // Open the modal
+    };
+
   return (
     <>
       {/* Profile icon with dropdown menu for login and sign up options */}
@@ -17,20 +24,20 @@ const IconMenu = () => {
         <div className="absolute left-1/2 -translate-x-1/2 z-10 pt-4 hidden group-hover:block">
           <ul className="p-4 border bg-background-light space-y-3 w-36 relative">
             <li>
-              <Link
-                to={"/"}
+              <button
+                onClick={openModal}
                 className="w-full block py-2 border border-primary rounded text-lg font-semibold text-primary text-center"
               >
                 Login
-              </Link>
+              </button>
             </li>
             <li>
-              <Link
-                to={"/"}
+              <button
+                onClick={openModal}
                 className="w-full block py-2 border border-primary rounded text-lg font-semibold text-primary text-center"
               >
                 Sign Up
-              </Link>
+              </button>
             </li>
           </ul>
           {/* Triangle pointer for dropdown menu */}

@@ -14,7 +14,7 @@ const productData = [
       "https://imagescdn.jaypore.com/img/app/product/3/39597656-11666713.jpg",
       "https://imagescdn.jaypore.com/img/app/product/3/39597656-11666714.jpg",
     ],
-    url: "/p/women-black-cotton-embroidered-v-neck-straight-fit-kurta-39597656.html",
+    url: "product",
     wishlist: false,
   },
   {
@@ -32,7 +32,7 @@ const productData = [
       "https://imagescdn.jaypore.com/img/app/product/3/39575662-11323482.jpg",
       "https://imagescdn.jaypore.com/img/app/product/3/39575662-11323483.jpg",
     ],
-    url: "/p/women-black-cotton-embroidered-round-neck-regular-fit-kurta-39575662.html",
+    url: "product",
     wishlist: false,
   },
   {
@@ -48,7 +48,7 @@ const productData = [
     images: [
       "https://imagescdn.jaypore.com/img/app/product/3/39588176-11494856.jpg",
     ],
-    url: "/p/women-black-cotton-embroidered-round-neck-regular-fit-kurta-39588176.html",
+    url: "product",
     wishlist: false,
   },
 ];

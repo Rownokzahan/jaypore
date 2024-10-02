@@ -1,5 +1,7 @@
 import { useEffect } from "react";
 import { Outlet, useLocation } from "react-router-dom";
+import LoginSignupModal from "../components/modal/LoginSignupModal";
+import ForgotPasswordModal from "../components/modal/ForgotPasswordModal";
 
 const RootLayout = () => {
   const { pathname } = useLocation();
@@ -12,6 +14,8 @@ const RootLayout = () => {
   return (
     <div className="text-dark-deep text-base bg-background-light">
       <Outlet />
+      <LoginSignupModal />
+      <ForgotPasswordModal/>
     </div>
   );
 };
