@@ -98,11 +98,7 @@ const LoginForm = () => {
       </label>
 
       <div className="flex justify-between items-center">
-        <button
-          type="submit"
-          className={`btn-primary ${!isValid ? "" : ""}`}
-          disabled={!isValid}
-        >
+        <button type="submit" className="btn-primary" disabled={!isValid}>
           Login
         </button>
       </div>
