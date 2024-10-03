@@ -1,5 +1,5 @@
 import { RiDeleteBinLine } from "react-icons/ri";
-import { Link } from "react-router-dom";
+import CheckoutButton from "../../../button/CheckoutButton";
 
 const CartItem = ({
   href,
@@ -102,14 +102,12 @@ const MiniCart = () => {
             <CartItem key={idx} {...item} />
           ))}
         </ul>
-        <div className="w-full pt-2 bg-background-light">
+        <div className="w-full pt-2 bg-background-light space-y-4">
           <p className="pt-2 border-t border-dark-light flex justify-center gap-1 font-semibold text-lg">
             <span>Total payable:</span>
             <span>₹ {total}</span>
           </p>
-          <Link to={`cart`} className="btn-primary uppercase block mt-4">
-            Checkout
-          </Link>
+          <CheckoutButton />
         </div>
 
         <div className="pt-3 w-3 absolute right-0 -top-[31px] z-10 ">

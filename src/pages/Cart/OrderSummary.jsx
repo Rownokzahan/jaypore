@@ -1,8 +1,11 @@
-import PlaceOrderButton from "../../components/button/PlaceOrderButton";
+import CheckoutButton from "../../components/button/CheckoutButton";
 
 const OrderSummary = () => {
   return (
-    <div className="sm:min-w-[300px] h-max p-3 space-y-3 bg-background-light" id="order-summary">
+    <div
+      className="sm:min-w-[300px] h-max p-3 space-y-3 bg-background-light"
+      id="order-summary"
+    >
       <div className="flex items-center justify-between">
         <h5 className="text-lg font-semibold">Order Summary</h5>
         <p className="text-dark">{5} items</p>
@@ -27,7 +30,7 @@ const OrderSummary = () => {
 
       {/* Show only in larger screen */}
       <div className="hidden sm:block">
-        <PlaceOrderButton />
+        <CheckoutButton />
       </div>
     </div>
   );

@@ -1,10 +1,10 @@
 import { FaAngleDown } from "react-icons/fa";
-import PlaceOrderButton from "../../components/button/PlaceOrderButton";
 import CartCard from "../../components/card/CartCard";
 import productData from "../../data/productData";
 import OrderSummary from "./OrderSummary";
 import ProductShowcase from "../../components/shared/ProductShowcase";
 import similarProductsData from "../../data/similarProductsData";
+import CheckoutButton from "../../components/button/CheckoutButton";
 
 const Cart = () => {
 
@@ -51,7 +51,7 @@ const handleScrollToOrderSummary = () => {
                 </button>
               </div>
               <div className="w-40">
-                <PlaceOrderButton />
+                <CheckoutButton />
               </div>
             </div>
           </div>
