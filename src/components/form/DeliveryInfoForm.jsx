@@ -4,7 +4,6 @@ const DeliveryInfoForm = ({ register, errors }) => {
   return (
     <form id="delivery-info" className="space-y-4" noValidate>
       {/* Full Name */}
-
       <div>
         <label className="block mb-1">Full Name</label>
         <input
@@ -21,7 +20,7 @@ const DeliveryInfoForm = ({ register, errors }) => {
       </div>
 
       {/*Email and Phone and Address */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
         <div>
           <label className="block mb-1">Email</label>
           <input
@@ -65,7 +64,7 @@ const DeliveryInfoForm = ({ register, errors }) => {
       </div>
 
       {/* City and Country */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
         <div>
           <label className="block mb-1">City</label>
           <input
