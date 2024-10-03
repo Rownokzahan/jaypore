@@ -4,7 +4,7 @@ import WishlistButton from "../button/WishListButton";
 const ProductCard = ({ product }) => {
   const { id, name, brand, price, images } = product || {};
   return (
-    <div className="w-full pb-[46px] border relative group">
+    <div className="w-full pb-[46px] border bg-background-light relative group">
       <WishlistButton productId={id} />
 
       <Link title={name}>

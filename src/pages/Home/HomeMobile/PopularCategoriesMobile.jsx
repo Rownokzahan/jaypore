@@ -3,7 +3,7 @@ import popularCategoriesData from "../../../data/popularCategoriesData";
 
 const PopularCategoriesMobile = () => {
   return (
-    <section className="container mb-2 hide-scrollable">
+    <section className="container !mt-0 mb-4 hide-scrollable">
       <div className="flex gap-4">
         {popularCategoriesData.map((category, index) => (
           <article key={index} className="text-center">

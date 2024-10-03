@@ -1,20 +1,22 @@
 import { Link } from "react-router-dom";
-import recommendedData from "../../../data/recommendedData";
-import RecommendedCard from "../../../components/card/RecommendedCard";
+import productData from "../../../data/productData";
+import ProductCard from "../../../components/card/ProductCard";
 
 const RecommendedCollectionMobile = () => {
   return (
-    <section className="py-4">
-      <header className="mb-3 px-2 text-center">
-        <h3 className="text-2xl">Recommended For You</h3>
-        <Link href="/" className="underline">
+    <section className="mt-responsive py-8 bg-background-gray">
+      <header className="container !mt-0 mb-8 text-center">
+        <h3 className="text-2xl lg:text-3xl">Recommended For You</h3>
+        <Link to={"/"} className="underline">
           View All &gt;
         </Link>
       </header>
 
-      <div className="flex hide-scrollable">
-        {recommendedData?.map((product, index) => (
-          <RecommendedCard key={index} product={product} />
+      <div className="container !mt-0 flex gap-4 hide-scrollable">
+        {productData?.map((product) => (
+          <div key={product.id} className="w-40">
+            <ProductCard product={product} />
+          </div>
         ))}
       </div>
     </section>

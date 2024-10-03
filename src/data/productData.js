@@ -51,6 +51,54 @@ const productData = [
     url: "product",
     wishlist: false,
   },
+  {
+    id: "395881767",
+    name: "Women Black Cotton Round Neck Regular Fit Kurta",
+    brand: "Jaypore",
+    price: {
+      current: 1500,
+      original: 3000,
+      discountPercent: 50,
+    },
+    sizes: ["S", "M"],
+    images: [
+      "https://imagescdn.jaypore.com/img/app/product/3/39588176-11494856.jpg",
+    ],
+    url: "product",
+    wishlist: false,
+  },
+  {
+    id: "39588176712",
+    name: "Women Black Cotton Round Neck Regular Fit Kurta",
+    brand: "Jaypore",
+    price: {
+      current: 1500,
+      original: 3000,
+      discountPercent: 50,
+    },
+    sizes: ["S", "M"],
+    images: [
+      "https://imagescdn.jaypore.com/img/app/product/3/39588176-11494856.jpg",
+    ],
+    url: "product",
+    wishlist: false,
+  },
+  {
+    id: "395881789",
+    name: "Women Black Cotton Round Neck Regular Fit Kurta",
+    brand: "Jaypore",
+    price: {
+      current: 1500,
+      original: 3000,
+      discountPercent: 50,
+    },
+    sizes: ["S", "M"],
+    images: [
+      "https://imagescdn.jaypore.com/img/app/product/3/39588176-11494856.jpg",
+    ],
+    url: "product",
+    wishlist: false,
+  },
 ];
 
 export default productData;

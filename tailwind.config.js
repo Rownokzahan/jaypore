@@ -26,9 +26,11 @@ export default {
           light: "#e8c1a8",
         },
         warning: "#ff9800",
+        success: "#4caf50",
+
         background: {
           light: "#f9f6f2",
-          dark: "#1a202c",
+          gray: "#eeecea",
         },
         dark: {
           light: "#dcdbdb",

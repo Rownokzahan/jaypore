@@ -80,7 +80,7 @@ const Carousel = ({
 
   return (
     <div
-      className={`relative ${displayIndicators ? "pb-12" : "pb-0"}`}
+      className={`relative ${displayIndicators ? "pb-8" : "pb-0"}`}
       onMouseEnter={autoplayOnHover ? play : undefined}
       onMouseLeave={autoplayOnHover ? pause : undefined}
     >

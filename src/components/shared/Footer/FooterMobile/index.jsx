@@ -5,49 +5,53 @@ import { MdOutlineCurrencyExchange } from "react-icons/md";
 import ExpandableLinks from "./ExpandableLinks";
 import SocialIcons from "../../SocialIcons";
 
+// Data for guarantees and features
+const guarantees = [
+  { Icon: BiCheckCircle, label: "100% Authentic Products" },
+  { Icon: RiSecurePaymentLine, label: "Secure Payment" },
+  { Icon: BsPatchCheck, label: "Quality Checked" },
+  { Icon: MdOutlineCurrencyExchange, label: "10 Days Free Return" },
+];
+
 const FooterMobile = () => {
   return (
-    <>
+    <footer>
       {/* Product guarantees and features */}
-      <div className="flex items-center justify-center divide-x divide-[#4caf50] text-[#4caf50] text-center p-3">
-        <div className="px-2 py-1">
-          <BiCheckCircle className="mx-auto text-2xl" />
-          <span className="text-xs mt-0">100% Authentic Products</span>
-        </div>
-        <div className="px-2 py-1">
-          <RiSecurePaymentLine className="mx-auto text-2xl" />
-          <span className="text-xs mt-0">Secure Payment</span>
-        </div>
-        <div className="px-2 py-1">
-          <BsPatchCheck className="mx-auto text-2xl" />
-          <span className="text-xs mt-0">Quality Checked</span>
-        </div>
-        <div className="px-2 py-1">
-          <MdOutlineCurrencyExchange className="mx-auto text-2xl" />
-          <span className="text-xs">10 Days Free Return</span>
-        </div>
+      <div
+        className="container text-success text-center divide-x divide-success"
+        style={{
+          display: "grid",
+          gridTemplateColumns: `repeat(${guarantees.length}, 1fr)`,
+        }}
+      >
+        {guarantees.map((item, index) => (
+          <div key={index} className="px-2">
+            <item.Icon className="mx-auto text-2xl mb-1" />
+            <p className="text-xs mt-0">{item.label}</p>
+          </div>
+        ))}
       </div>
 
       {/* Contact info and expandable links */}
-      <div className="bg-[#f9eddf] text-dark-deep">
-        <div className="px-5 py-8 space-y-4">
-          <p>Questions?</p>
+      <div className="text-dark-deep mt-4">
+        <div className="container !mt-0 py-5 bg-[#f9eddf]">
+          <p className="mb-2">Questions?</p>
           <p className="font-semibold">Mail us at hello@jaypore.com</p>
         </div>
 
         <ExpandableLinks />
 
         {/* Copyright notice */}
-        <div className="bg-background-light p-4 text-center">
+        <div className="container !mt-0 bg-background-light py-4 text-center">
           <p>© 2023 Jaypore, All rights Reserved.</p>
         </div>
 
         {/* Social media icons */}
-        <div className="flex items-center justify-center gap-4 text-xl p-5">
+        <div className="container !mt-0 bg-[#f9eddf] flex items-center justify-center gap-4 text-xl p-5">
           <SocialIcons />
         </div>
       </div>
-    </>
+    </footer>
   );
 };
 

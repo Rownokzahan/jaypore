@@ -20,10 +20,10 @@ const brandsData = [
 
 const Brands = () => {
   return (
-    <section className="container">
-      <header className="text-center mb-6">
+    <section>
+      <header className="container mb-8 text-center">
         <p className="uppercase">Brands</p>
-        <h3 className="text-3xl flex justify-center gap-2 mt-3">
+        <h3 className="text-2xl lg:text-3xl text-center flex justify-center gap-2 mt-3">
           In the
           <span className="flex items-center gap-2 text-primary-dark">
             <PiTriangleFill className="-rotate-90 text-[28px]" />
@@ -33,7 +33,7 @@ const Brands = () => {
         </h3>
       </header>
 
-      <div className="grid md:grid-cols-2 gap-6 lg:gap-12">
+      <div className="container !mt-0 grid md:grid-cols-2 gap-4 lg:gap-8">
         {brandsData.map((brand, index) => (
           <article key={index}>
             <Link to={brand.link} title={brand.title}>

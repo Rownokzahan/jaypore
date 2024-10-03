@@ -6,7 +6,7 @@ const PopularCategoriesDesktop = () => {
       <header className="text-center mb-6">
         <h3 className="text-2xl">Popular Categories</h3>
       </header>
-      <div className="grid grid-cols-4 gap-x-12">
+      <div className="grid grid-cols-4 gap-x-8">
         {/* column 1 */}
         <div className="flex flex-col gap-6">
           <a

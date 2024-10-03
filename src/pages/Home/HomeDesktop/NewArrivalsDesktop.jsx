@@ -5,8 +5,8 @@ import newArrivalsData from "../../../data/newArrivalsData";
 const NewArrivalsDesktop = () => {
   return (
     <section className="container grid grid-cols-4 items-center gap-x-12">
-      <header className="text-center space-y-1 mb-3">
-        <h3 className="text-3xl">New Arrivals</h3>
+      <header className="text-center space-y-1">
+        <h3 className="text-2xl lg:text-3xl">New Arrivals</h3>
         <p>Discover Your Crafts</p>
       </header>
 

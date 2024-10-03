@@ -2,12 +2,12 @@ import { Link } from "react-router-dom";
 
 const FinestCollection = () => {
   return (
-    <section className="container">
-      <header className="text-3xl text-center mb-8">
-        <h3>Jaypore&apos;s Finest</h3>
+    <section>
+      <header className="container mb-8 text-center">
+        <h3 className="text-2xl lg:text-3xl">Jaypore&apos;s Finest</h3>
       </header>
 
-      <div className="grid lg:grid-cols-2 gap-3 lg:gap-12">
+      <div className="container !mt-0 grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8">
         <article>
           <Link to={"/"} title="Daraz">
             <img
@@ -32,7 +32,7 @@ const FinestCollection = () => {
           </div>
         </article>
 
-        <div className="grid grid-cols-2 lg:grid-cols-1 gap-3">
+        <div className="grid lg:grid-cols-1 grid-cols-2 gap-4 lg:gap-8">
           <article>
             <Link to={"/"} title="Dakshina">
               <img

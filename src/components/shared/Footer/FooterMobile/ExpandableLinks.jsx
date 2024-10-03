@@ -15,12 +15,12 @@ const ExpandableLinks = () => {
   };
 
   return (
-    <div className="divide-y divide-background-light">
+    <div className="bg-[#f9eddf] pb-5 divide-y divide-background-light">
       {footerData.map((section) => (
-        <div key={section.title} className="px-5 py-3">
+        <div key={section.title} className="container !mt-0 bg-[#f9eddf] py-2">
           <button
             onClick={() => toggleSection(section.title)}
-            className="w-full font-semibold mb-2 flex items-center justify-between"
+            className="w-full font-semibold flex items-center justify-between"
           >
             <span>{section.title}</span>
             <IoIosArrowForward
@@ -31,9 +31,9 @@ const ExpandableLinks = () => {
           </button>
 
           <ul
-            className={`list-none space-y-2 overflow-hidden transition-all duration-300 ${
+            className={`list-none space-y-2 overflow-hidden transition-all duration-300 mt-2 ${
               expandedSections.includes(section.title)
-                ? "max-h-[1000px] border-t border-dark-light"
+                ? "max-h-[1000px]"
                 : "max-h-0"
             }`}
           >

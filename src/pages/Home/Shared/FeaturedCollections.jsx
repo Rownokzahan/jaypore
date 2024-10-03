@@ -45,17 +45,17 @@ const featuredCollectionsData = [
 const FeaturedCollections = () => {
   return (
     <section>
-      <header className="text-center container !pb-0 lg:mb-6">
-        <h3 className="text-3xl">Featured Collections</h3>
+      <header className="container mb-8 text-center">
+        <h3 className="text-2xl lg:text-3xl">Featured Collections</h3>
       </header>
 
-      <div className="container lg:py-0 grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-10">
+      <div className="container !mt-0 grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8">
         {featuredCollectionsData.map((item) => (
           <CollectionsCard key={item.href} item={item} />
         ))}
       </div>
 
-      <figure className="py-6">
+      <figure className="mt-responsive">
         <img
           src="https://imagescdn.jaypore.com/uploads/micrositmedia/production/26082024_Festive_Skinny_Banner_Mobile_3771_1724390387562.jpg?w=600&auto=format"
           alt="Festive Collection Banner"
@@ -69,7 +69,7 @@ const FeaturedCollections = () => {
         />
       </figure>
 
-      <div className="container grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-10">
+      <div className="container grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8">
         {featuredCollectionsData.map((item) => (
           <CollectionsCard key={item.href} item={item} />
         ))}

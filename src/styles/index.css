@@ -6,8 +6,12 @@ body {
   @apply font-lato;
 }
 
-.container{
-  @apply max-w-[1200px] mx-auto px-2 py-6 lg:p-12;
+.container {
+  @apply max-w-[1920px] mx-auto mt-14 md:mt-16 lg:mt-20 px-[5%] lg:px-[6%];
+}
+
+.mt-responsive {
+  @apply mt-14 md:mt-16 lg:mt-20;
 }
 
 .hide-scrollable {
@@ -33,18 +37,18 @@ body {
   -moz-appearance: textfield;
 }
 
-.btn{
-  @apply w-full py-2 rounded border font-semibold text-lg text-center hover:shadow-md
+.btn {
+  @apply w-full py-2 rounded border font-semibold text-lg text-center hover:shadow-md;
 }
 
-.btn-primary{
-  @apply btn border-primary-dark bg-primary-dark disabled:bg-primary-light disabled:border-primary-light disabled:opacity-60 text-background-light
+.btn-primary {
+  @apply btn border-primary-dark bg-primary-dark disabled:bg-primary-light disabled:border-primary-light disabled:opacity-60 text-background-light;
 }
 
-.btn-primary-outline{
-  @apply btn border-primary-dark text-primary-dark
+.btn-primary-outline {
+  @apply btn border-primary-dark text-primary-dark;
 }
 
-.form-input{
-  @apply w-full px-4 py-2 border border-gray-300 rounded focus:border-primary focus:shadow outline-none bg-transparent
+.form-input {
+  @apply w-full px-4 py-2 border border-gray-300 rounded focus:border-primary focus:shadow outline-none bg-transparent;
 }
