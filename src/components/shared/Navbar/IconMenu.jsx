@@ -2,9 +2,9 @@ import { CgProfile } from "react-icons/cg";
 import { FiHeart } from "react-icons/fi";
 import { BsHandbag } from "react-icons/bs";
 import { Link } from "react-router-dom";
-import MiniCart from "./NavbarDesktop/MiniCart";
 import { useScreenSize } from "../../../hooks/useScreenSize";
 import useAuthModal from "../../../hooks/useAuthModal";
+import MiniCart from "./NavbarDesktop/MiniCart";
 
 const IconMenu = () => {
   const { isDesktopScreen } = useScreenSize();
