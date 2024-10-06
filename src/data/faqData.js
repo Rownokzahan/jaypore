@@ -3,9 +3,9 @@ const faqData = [
     category: "General",
     faqs: [
       {
-        question: "What is Jaypore?",
+        question: "What is Unyic?",
         answer:
-          "Jaypore is about bringing the world a little closer together. We discover the best designs from artisans and craftsmen from all over India, and deliver them at exceptional value to our members.",
+          "Unyic is about bringing the world a little closer together. We discover the best designs from artisans and craftsmen from all over India, and deliver them at exceptional value to our members.",
       },
       {
         question: "Is there any quality assurance for the items ordered?",
@@ -30,7 +30,7 @@ const faqData = [
       {
         question: "How can I contact customer support?",
         answer:
-          "You can contact our customer support team via email at support@jaypore.com or through our online chat feature on the website. Our team is available to assist you with any questions or concerns.",
+          "You can contact our customer support team via email at support@unyic.com or through our online chat feature on the website. Our team is available to assist you with any questions or concerns.",
       },
       {
         question: "Can I modify or cancel my order after placing it?",
@@ -51,7 +51,7 @@ const faqData = [
       {
         question: "How are products delivered to me?",
         answer:
-          "At Jaypore, we take great care in delivering your products to you, and we partner only with reputed national couriers. Once your order has been shipped, you will receive an email and SMS with details of the courier partner and AWB (Tracking number), using which you can track your shipment.",
+          "At Unyic, we take great care in delivering your products to you, and we partner only with reputed national couriers. Once your order has been shipped, you will receive an email and SMS with details of the courier partner and AWB (Tracking number), using which you can track your shipment.",
       },
       {
         question: "Is there any additional delivery charge?",
@@ -102,29 +102,29 @@ const faqData = [
     category: "Refunds And Returns",
     faqs: [
       {
-        question: "What is Jaypore's return and exchange policy?",
+        question: "What is Unyic's return and exchange policy?",
         answer:
-          "Eligible products can be returned within 10 days of delivery. Each product’s return policy is listed under the Shipping Info section on the product page. Jaypore does not offer exchanges.",
+          "Eligible products can be returned within 10 days of delivery. Each product’s return policy is listed under the Shipping Info section on the product page. Unyic does not offer exchanges.",
       },
       {
         question: "I have received a damaged product. What should I do?",
         answer:
-          "Email a photo of the damaged product with the Bar Code to hello@jaypore.com within 48 hours of receiving your order.",
+          "Email a photo of the damaged product with the Bar Code to hello@unyic.com within 48 hours of receiving your order.",
       },
       {
-        question: "Are all Jaypore products returnable?",
+        question: "Are all Unyic products returnable?",
         answer:
           "Not all products are eligible for returns. Many items are marked as 'Final Sale.' Check product eligibility before purchasing.",
       },
       {
         question: "How does the return process work?",
         answer:
-          "Contact customer care at 730-5297673 or hello@jaypore.com, or use the chat window. The customer service team will email you the return formalities after checking eligibility.",
+          "Contact customer care at 730-5297673 or hello@unyic.com, or use the chat window. The customer service team will email you the return formalities after checking eligibility.",
       },
       {
         question: "How will I get my refund?",
         answer:
-          "Refunds can be given as store credit, which will reflect in your Jaypore account within 24 working hours from when the product is picked up. Alternatively, if you prefer a refund to the original payment method, it will be processed after the item passes quality checks.",
+          "Refunds can be given as store credit, which will reflect in your Unyic account within 24 working hours from when the product is picked up. Alternatively, if you prefer a refund to the original payment method, it will be processed after the item passes quality checks.",
       },
     ],
   },

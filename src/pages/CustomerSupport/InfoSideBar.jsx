@@ -34,8 +34,8 @@ const InfoSideBar = () => {
 
         <div className="flex items-center gap-2">
           <MdOutlineMail className="text-lg" />
-          <span title="Email us at hello@jaypore.com for assistance">
-            hello@jaypore.com
+          <span title="Email us at hello@unyic.com for assistance">
+            hello@unyic.com
           </span>
         </div>
 
@@ -73,7 +73,7 @@ const InfoSideBar = () => {
         <p>
           Interested in partnering with us, write to <br />
           <span className="font-semibold">
-            partnering.jaypore@abfrl.adityabirla.com
+            partnering.unyic@abfrl.adityabirla.com
           </span>
         </p>
       </div>
@@ -87,7 +87,7 @@ const InfoSideBar = () => {
             title="Contact us via email for business inquiries"
             className="font-semibold"
           >
-            b2b@jaypore.com
+            b2b@unyic.com
           </span>
           <span
             title="Call us for support: (+91) 9205044554"

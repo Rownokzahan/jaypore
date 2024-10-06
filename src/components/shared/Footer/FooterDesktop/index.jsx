@@ -1,7 +1,7 @@
 import FooterLinks from "./FooterLinks";
 import shipping from "../../../../assets/images/shipping.png";
 import payment from "../../../../assets/images/payment.png";
-import aditya from "../../../../assets/images/aditya-birala.webp";
+import Logo from "../../Logo";
 
 const FooterDesktop = () => {
   return (
@@ -30,26 +30,25 @@ const FooterDesktop = () => {
           </div>
         </div>
 
-        {/* About Jaypore section */}
+        {/* About Unyic section */}
         <div className="flex gap-4 items-start pt-8 border-t border-white px-10">
-          <img
-            src={aditya}
-            alt="Aditya Birla"
-            className="w-12 object-contain"
-          />
+          <div className="w-96">
+            <Logo />
+          </div>
+
           <div>
             <h4 className="text-lg font-semibold">
-              Jaypore: Discover India&apos;s Most Beautiful Products and Their
+              Unyic: Discover India&apos;s Most Beautiful Products and Their
               Unique Stories
             </h4>
             <p>
               India wears her beauty in the colorful textiles, breathtaking
               ornaments and inspiring stories that come alive in her streets.
               There is magic in the hands that work the loom, in the eyes that
-              pore over a needle, in the brushstrokes that paint life. At
-              Jaypore, we have begun a fascinating journey, a humble attempt to
-              bring India a little closer to the world. Dedicated to creating a
-              unique interpretation of age-old crafts, we partner with artisanal
+              pore over a needle, in the brushstrokes that paint life. At Unyic,
+              we have begun a fascinating journey, a humble attempt to bring
+              India a little closer to the world. Dedicated to creating a unique
+              interpretation of age-old crafts, we partner with artisanal
               communities, textile designers, independent artists (and the
               occasional maverick) to showcase a new, contemporary design
               language that comes from India and belongs everywhere on the
@@ -67,7 +66,7 @@ const FooterDesktop = () => {
 
         {/* Copyright notice */}
         <div className="text-center mt-12">
-          <p className="text-xs">© 2023 Jaypore, All rights Reserved.</p>
+          <p className="text-xs">© 2023 Unyic, All rights Reserved.</p>
         </div>
       </div>
     </footer>

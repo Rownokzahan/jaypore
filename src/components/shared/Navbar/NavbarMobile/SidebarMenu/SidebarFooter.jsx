@@ -7,7 +7,7 @@ const SidebarFooter = () => {
   return (
     <ul className="p-4 space-y-4">
       <li>
-        <button onClick={()=>setLoginSignupModalVisibility(true)}>
+        <button onClick={() => setLoginSignupModalVisibility(true)}>
           <span>Login / Sign up</span>
         </button>
       </li>
@@ -17,14 +17,8 @@ const SidebarFooter = () => {
         </Link>
       </li>
       <li>
-        <Link to={"#"}>
-          <span>Track Orders</span>
-        </Link>
-      </li>
-
-      <li>
-        <Link to={"#"}>
-          <span>More</span>
+        <Link to={"/customer-support"}>
+          <span>Customer Support</span>
         </Link>
       </li>
     </ul>

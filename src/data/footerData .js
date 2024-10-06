@@ -45,7 +45,7 @@ const footerData = [
   {
     title: "Useful Links",
     links: [
-      { name: "About Jaypore", href: "#" },
+      { name: "About Unyic", href: "#" },
       { name: "Blog", href: "#" },
       { name: "Careers", href: "#" },
       { name: "FAQs", href: "#" },

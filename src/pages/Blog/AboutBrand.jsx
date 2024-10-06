@@ -3,7 +3,7 @@ const AboutBrand = () => {
     <article className="space-y-6">
       <h3 className="flex items-center gap-1">
         <span className="block w-3 h-3 bg-primary-dark rounded-full"></span>{" "}
-        <span className="uppercase font-semibold">About Jaypore</span>
+        <span className="uppercase font-semibold">About Unyic</span>
       </h3>
       <img
         src="https://blog.jaypore.com/wp-content/uploads/2024/03/jaypore-1.jpg"

@@ -4,7 +4,7 @@ const FinestCollection = () => {
   return (
     <section>
       <header className="container mb-8 text-center">
-        <h3 className="text-2xl lg:text-3xl">Jaypore&apos;s Finest</h3>
+        <h3 className="text-2xl lg:text-3xl">Unyic&apos;s Finest</h3>
       </header>
 
       <div className="container !mt-0 grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8">

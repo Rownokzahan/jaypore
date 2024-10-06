@@ -2,7 +2,7 @@ const productData = [
   {
     id: "39597656",
     name: "Women Black Cotton Embroidered V Neck Straight Fit Kurta",
-    brand: "Jaypore",
+    brand: "Unyic",
     price: {
       current: 1314,
       original: 2190,
@@ -20,7 +20,7 @@ const productData = [
   {
     id: "39575662",
     name: "Women Black Cotton Round Neck Regular Fit Kurta",
-    brand: "Jaypore",
+    brand: "Unyic",
     price: {
       current: 1495,
       original: 2990,
@@ -38,7 +38,7 @@ const productData = [
   {
     id: "39588176",
     name: "Women Black Cotton Round Neck Regular Fit Kurta",
-    brand: "Jaypore",
+    brand: "Unyic",
     price: {
       current: 1500,
       original: 3000,
@@ -54,7 +54,7 @@ const productData = [
   {
     id: "395881767",
     name: "Women Black Cotton Round Neck Regular Fit Kurta",
-    brand: "Jaypore",
+    brand: "Unyic",
     price: {
       current: 1500,
       original: 3000,
@@ -70,7 +70,7 @@ const productData = [
   {
     id: "39588176712",
     name: "Women Black Cotton Round Neck Regular Fit Kurta",
-    brand: "Jaypore",
+    brand: "Unyic",
     price: {
       current: 1500,
       original: 3000,
@@ -86,7 +86,7 @@ const productData = [
   {
     id: "395881789",
     name: "Women Black Cotton Round Neck Regular Fit Kurta",
-    brand: "Jaypore",
+    brand: "Unyic",
     price: {
       current: 1500,
       original: 3000,

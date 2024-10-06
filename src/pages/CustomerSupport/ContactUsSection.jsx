@@ -71,7 +71,7 @@ const ContactUsSection = () => {
 
         <div className="lg:mt-5">
           <p>Reach out to us:</p>
-          <p className="font-semibold">hello@jaypore.com</p>
+          <p className="font-semibold">hello@unyic.com</p>
         </div>
       </div>
     </>

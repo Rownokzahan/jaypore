@@ -1,12 +1,14 @@
 import { Link } from "react-router-dom";
 
+import logo from "../../assets/images/logo.png"
+
 const Logo = () => {
   return (
     <Link to="/">
       <img
-        src="https://imagescdn.jaypore.com/img/app/brands/jaypore/jaypore.png?w=400"
-        alt="jaypore"
-        className="max-w-[172px] w-full object-contain"
+        src={logo}
+        alt="unyic"
+        className="h-6 lg:h-7 object-contain"
       />
     </Link>
   );

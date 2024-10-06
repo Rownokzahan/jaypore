@@ -1,7 +1,7 @@
 const menuData = [
   {
-    title: "Jaypore Label",
-    url: "product-collection",
+    title: "Unyic Label",
+    url: "#",
   },
   {
     title: "Women",
@@ -11,16 +11,16 @@ const menuData = [
         title: "Apparel",
         url: "#",
         subcategories: [
-          { title: "Dresses", url: "#" },
-          { title: "Kurtas", url: "#" },
+          { title: "Dresses", url: "/product-collection" },
+          { title: "Kurtas", url: "/product-collection" },
         ],
       },
       {
         title: "Jewelry",
         url: "#",
         subcategories: [
-          { title: "Necklaces", url: "#" },
-          { title: "Earrings", url: "#" },
+          { title: "Necklaces", url: "/product-collection" },
+          { title: "Earrings", url: "/product-collection" },
         ],
       },
     ],
@@ -33,16 +33,16 @@ const menuData = [
         title: "Apparel",
         url: "#",
         subcategories: [
-          { title: "Shirts", url: "#" },
-          { title: "Trousers", url: "#" },
+          { title: "Shirts", url: "/product-collection" },
+          { title: "Trousers", url: "/product-collection" },
         ],
       },
       {
         title: "Accessories",
         url: "#",
         subcategories: [
-          { title: "Watches", url: "#" },
-          { title: "Belts", url: "#" },
+          { title: "Watches", url: "/product-collection" },
+          { title: "Belts", url: "/product-collection" },
         ],
       },
     ],
@@ -55,16 +55,16 @@ const menuData = [
         title: "Clothing",
         url: "#",
         subcategories: [
-          { title: "Girls", url: "#" },
-          { title: "Boys", url: "#" },
+          { title: "Girls", url: "/product-collection" },
+          { title: "Boys", url: "/product-collection" },
         ],
       },
       {
         title: "Accessories",
         url: "#",
         subcategories: [
-          { title: "Jewelry", url: "#" },
-          { title: "Bags", url: "#" },
+          { title: "Jewelry", url: "/product-collection" },
+          { title: "Bags", url: "/product-collection" },
         ],
       },
     ],
@@ -77,16 +77,16 @@ const menuData = [
         title: "Bed Linen",
         url: "#",
         subcategories: [
-          { title: "Bedsheets", url: "#" },
-          { title: "Towels", url: "#" },
+          { title: "Bedsheets", url: "/product-collection" },
+          { title: "Towels", url: "/product-collection" },
         ],
       },
       {
         title: "Decor",
         url: "#",
         subcategories: [
-          { title: "Vases", url: "#" },
-          { title: "Wall Frames", url: "#" },
+          { title: "Vases", url: "/product-collection" },
+          { title: "Wall Frames", url: "/product-collection" },
         ],
       },
     ],

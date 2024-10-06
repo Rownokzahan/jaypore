@@ -36,14 +36,14 @@ const FooterMobile = () => {
       <div className="text-dark-deep mt-4">
         <div className="container !mt-0 py-5 bg-[#f9eddf]">
           <p className="mb-2">Questions?</p>
-          <p className="font-semibold">Mail us at hello@jaypore.com</p>
+          <p className="font-semibold">Mail us at hello@unyic.com</p>
         </div>
 
         <ExpandableLinks />
 
         {/* Copyright notice */}
         <div className="container !mt-0 bg-background-light py-4 text-center">
-          <p>© 2023 Jaypore, All rights Reserved.</p>
+          <p>© 2023 Unyic, All rights Reserved.</p>
         </div>
 
         {/* Social media icons */}

@@ -2,7 +2,7 @@ const similarProductsData = [
   {
     id: "39597656",
     name: "Women Black Cotton Embroidered V Neck Straight Fit Kurta",
-    brand: "Jaypore",
+    brand: "Unyic",
     price: {
       current: 1314,
       original: 2190,
@@ -20,7 +20,7 @@ const similarProductsData = [
   {
     id: "39575662",
     name: "Women Black Cotton Round Neck Regular Fit Kurta",
-    brand: "Jaypore",
+    brand: "Unyic",
     price: {
       current: 1495,
       original: 2990,
@@ -38,7 +38,7 @@ const similarProductsData = [
   {
     id: "39588176",
     name: "Women Black Cotton Round Neck Regular Fit Kurta",
-    brand: "Jaypore",
+    brand: "Unyic",
     price: {
       current: 1500,
       original: 3000,
@@ -55,7 +55,7 @@ const similarProductsData = [
   {
     id: "395976512",
     name: "Women Black Cotton Embroidered V Neck Straight Fit Kurta",
-    brand: "Jaypore",
+    brand: "Unyic",
     price: {
       current: 1314,
       original: 2190,
@@ -73,7 +73,7 @@ const similarProductsData = [
   {
     id: "39575660",
     name: "Women Black Cotton Round Neck Regular Fit Kurta",
-    brand: "Jaypore",
+    brand: "Unyic",
     price: {
       current: 1495,
       original: 2990,
@@ -91,7 +91,7 @@ const similarProductsData = [
   {
     id: "39588179",
     name: "Women Black Cotton Round Neck Regular Fit Kurta",
-    brand: "Jaypore",
+    brand: "Unyic",
     price: {
       current: 1500,
     },
@@ -106,7 +106,7 @@ const similarProductsData = [
   {
     id: "39597658",
     name: "Women Black Cotton Embroidered V Neck Straight Fit Kurta",
-    brand: "Jaypore",
+    brand: "Unyic",
     price: {
       current: 1314,
       original: 2190,
@@ -124,7 +124,7 @@ const similarProductsData = [
   {
     id: "39575664",
     name: "Women Black Cotton Round Neck Regular Fit Kurta",
-    brand: "Jaypore",
+    brand: "Unyic",
     price: {
       current: 1495,
       original: 2990,
@@ -142,7 +142,7 @@ const similarProductsData = [
   {
     id: "39588173",
     name: "Women Black Cotton Round Neck Regular Fit Kurta",
-    brand: "Jaypore",
+    brand: "Unyic",
     price: {
       current: 1500,
       original: 3000,

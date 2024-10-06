@@ -26,7 +26,7 @@ const FooterLinks = () => {
         </div>
         <div>
           <p>Questions? Mail us at</p>
-          <p>hello@jaypore.com</p>
+          <p>hello@unyic.com</p>
         </div>
       </div>
     </div>

@@ -12,7 +12,7 @@ import similarProductsData from "../../data/similarProductsData";
 const product = {
   id: "39575662",
   name: "Women Black Cotton Round Neck Regular Fit Kurta",
-  brand: "Jaypore",
+  brand: "Unyic",
   price: {
     current: 1495,
     original: 2990,
@@ -48,15 +48,15 @@ const Product = () => {
           </li>
           {">"}
           <li>
-            <Link to={`/c/jaypore-label`}>Jaypore Label</Link>
+            <Link to={`/product-collection`}>Unyic Label</Link>
           </li>
           {">"}
           <li>
-            <Link to={`/c/jaypore-silver-jewelry`}>Silver Jewelry</Link>
+            <Link to={`/product-collection`}>Silver Jewelry</Link>
           </li>
           {">"}
           <li>
-            <Link to={`/c/jaypore-women-silver-earrings`}>Earrings</Link>
+            <Link to={`/product-collection`}>Earrings</Link>
           </li>
           {">"}
           <li className="text-dark-deep">
