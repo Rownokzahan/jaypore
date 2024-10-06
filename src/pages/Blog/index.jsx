@@ -5,10 +5,10 @@ import RecentArticles from "./RecentArticles";
 
 const Blog = () => {
   return (
-    <div>
+    <main>
       <BlogHeader />
 
-      <div className="container grid grid-cols-1 md:grid-cols-4 gap-16">
+      <div className="container !mt-6 grid grid-cols-1 md:grid-cols-4 gap-16">
         <div className="md:col-span-3">
           <BlogContent />
         </div>
@@ -17,7 +17,7 @@ const Blog = () => {
           <RecentArticles />
         </div>
       </div>
-    </div>
+    </main>
   );
 };
 

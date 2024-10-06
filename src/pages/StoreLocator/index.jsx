@@ -33,9 +33,9 @@ const StoreLocator = () => {
   });
 
   return (
-    <div className="container">
+    <main className="container !mt-2 lg:!mt-6">
       {/* Breadcrumb  */}
-      <div>
+      <div className="mb-6">
         <ul className="flex gap-2 divide-dark text-dark">
           <li>
             <Link to={`/`}>Home</Link>
@@ -47,8 +47,8 @@ const StoreLocator = () => {
         </ul>
       </div>
 
-      <div>
-        <h3 className="uppercase text-lg font-semibold my-3">Find a Store</h3>
+      <section>
+        <h3 className="uppercase text-lg font-semibold mb-4">Find a Store</h3>
 
         {/* State and City Dropdown */}
         <div className="flex flex-col gap-4 lg:flex-row lg:gap-0 lg:items-center">
@@ -85,8 +85,8 @@ const StoreLocator = () => {
         <hr className="my-8" />
 
         <StoreList stores={filteredStores} />
-      </div>
-    </div>
+      </section>
+    </main>
   );
 };
 

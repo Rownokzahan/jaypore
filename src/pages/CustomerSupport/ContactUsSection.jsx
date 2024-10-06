@@ -23,7 +23,7 @@ const ContactUsSection = () => {
 
   return (
     <>
-      <h3 className="uppercase pb-4 my-8 border-b-4 border-dark-deep text-xl font-semibold">
+      <h3 className="uppercase pb-4 mb-8 border-b-4 border-dark-deep text-xl font-semibold">
         Contact Us
       </h3>
       <h5 className="text-lg mb-4">What can we help with you today?</h5>

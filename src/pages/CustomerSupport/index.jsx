@@ -5,9 +5,9 @@ import InfoSideBar from "./InfoSideBar";
 
 const CustomerSupport = () => {
   return (
-    <div className="container">
+    <div className="container !mt-2 lg:!mt-6">
       {/* Breadcrumb  */}
-      <div>
+      <div className="mb-6">
         <ul className="flex gap-2 divide-dark text-dark">
           <li>
             <Link to={`/`}>Home</Link>

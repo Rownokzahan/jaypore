@@ -5,7 +5,7 @@ import { RiCustomerService2Line } from "react-icons/ri";
 
 const ServiceLinks = () => {
   return (
-    <div className="flex items-center">
+    <div className="flex items-center w-max">
       <Link to={"/store-locator"} className="flex items-center gap-1">
         <LuStore className="ms-2 text-xl" />
         <span>Locate Stores</span>

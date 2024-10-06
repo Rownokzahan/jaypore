@@ -19,11 +19,11 @@ const Checkout = () => {
   };
 
   return (
-    <main className="md:container mx-auto">
-      <header className="py-2 flex justify-center items-center gap-2 bg-background-light mb-4">
-        <h1 className="text-2xl font-semibold">Checkout</h1>
-        <h2 className="text-dark text-xl">( {5} items)</h2>
-      </header>
+    <main className="md:container !mt-2 lg:!mt-6 mx-auto">
+      <div className="mb-6 text-center">
+        <h3 className="text-2xl font-semibold">Checkout</h3>
+        <p className="text-dark">{5} items</p>
+      </div>
 
       <section className="grid grid-cols-1 lg:grid-cols-3 md:gap-8">
         {/* Delivery information */}

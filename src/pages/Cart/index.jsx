@@ -20,9 +20,9 @@ const handleScrollToOrderSummary = () => {
 };
 
   return (
-    <>
-      <section className="lg:container lg:py-12 lg:w-max mx-auto">
-        <div className="py-3 lg:p-6 bg-[#eeecea] flex flex-col lg:flex-row gap-4 lg:gap-6 relative">
+    <main>
+      <section className="lg:container lg:mt-6 lg:w-max mx-auto">
+        <div className="py-3 lg:p-6 bg-background-gray flex flex-col lg:flex-row gap-4 lg:gap-8 relative">
           <div className="w-full lg:max-w-xl space-y-3">
             <div className="p-3 bg-background-light">
               <h3 className="text-2xl">
@@ -63,7 +63,7 @@ const handleScrollToOrderSummary = () => {
         title="Top Picks For You"
         products={similarProductsData}
       />
-    </>
+    </main>
   );
 };
 

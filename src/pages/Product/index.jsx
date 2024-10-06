@@ -41,7 +41,7 @@ const Product = () => {
   return (
     <>
       {/* Breadcrumb */}
-      <div className="container">
+      <div className="container !mt-2 lg:!mt-6 mb-6">
         <ul className="flex flex-wrap gap-2 divide-dark text-dark">
           <li>
             <Link to={`/`}>Home</Link>
@@ -65,7 +65,7 @@ const Product = () => {
         </ul>
       </div>
       {/* For larger screen */}
-      <div className="container !pt-0 hidden lg:flex lg:gap-12">
+      <div className="container !mt-0 hidden lg:flex lg:gap-8">
         <div className="w-[60%]">
           <div className="relative">
             <ProductImagesDesktop images={images} />
@@ -91,7 +91,7 @@ const Product = () => {
       </div>
 
       {/* For smaller screen */}
-      <div className="lg:hidden container relative">
+      <div className="lg:hidden container !mt-0 relative">
         <div className="relative">
           <ProductImagesMobile images={images} />
           <WishlistButton />

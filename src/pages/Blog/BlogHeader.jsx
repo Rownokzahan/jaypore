@@ -1,7 +1,7 @@
 const BlogHeader = () => {
   return (
     <div className="border-y">
-      <div className="container text-dark">
+      <div className="container !mt-2 lg:!mt-6 mb-6 text-dark">
         <h1 className="text-4xl mb-3">
           Discover India&apos;s Most Beautiful Crafts & Their Unique Stories
         </h1>
