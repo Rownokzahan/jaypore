@@ -9,7 +9,7 @@ const MainLayout = () => {
         <Navbar />
       </div>
 
-      <div className="min-h-screen mt-[63px] lg:mt-[123px]">
+      <div className="min-h-[calc(100vh-60px)] lg:min-h-[calc(100vh-80px)] pt-[63px] lg:pt-[123px]">
         <Outlet />
       </div>
       <Footer />

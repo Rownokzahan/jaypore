@@ -8,10 +8,10 @@ const ProductCollection = () => {
 
   return (
     <>
-      <div className="container">
+      <main className="container !mt-2 lg:!mt-6">
         {/* Breadcrumb should be dynmic for this page */}
         {/* Breadcrumb */}
-        <div>
+        <div className="mb-6">
           <ul className="flex gap-2 divide-dark text-dark">
             <li>
               <Link to={`/`}>Home</Link>
@@ -23,13 +23,11 @@ const ProductCollection = () => {
           </ul>
         </div>
 
-        <div className="mt-4">
-          <h3 className="text-lg">
-            {"Sarees for Women"} -{" "}
-            <span className="text-base text-dark">{1862} products</span>
-          </h3>
-        </div>
-      </div>
+        <h3 className="text-lg mb-4">
+          {"Sarees for Women"} -{" "}
+          <span className="text-base text-dark">{1862} products</span>
+        </h3>
+      </main>
 
       {isDesktopScreen ? (
         <ProductCollectionDesktop />

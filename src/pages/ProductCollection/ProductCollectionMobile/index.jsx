@@ -4,8 +4,8 @@ import { VscSettings } from "react-icons/vsc";
 import SortDropdownMobile from "./SortDropdownMobile";
 import FilterSidebarMobile from "./FilterSidebarMobile/FilterSidebarMobile";
 import productData from "../../../data/productData";
-import ProductCardMobile from "../../../components/card/ProductCard/ProductCardMobile";
 import Pagination from "../shared/Pagination";
+import ProductPageCard from "../../../components/card/ProductPageCard";
 
 const ProductCollectionMobile = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -68,9 +68,9 @@ const ProductCollectionMobile = () => {
         setAppliedFilters={setAppliedFilters}
       />
 
-      <div className="container !pt-0 grid grid-cols-2 gap-x-2 gap-y-10">
+      <div className="container !mt-4 grid grid-cols-2 sm:grid-cols-3 gap-x-2 sm:gap-x-4 gap-y-8">
         {productData?.map((product) => (
-          <ProductCardMobile key={product.id} product={product} />
+          <ProductPageCard key={product.id} product={product} />
         ))}
       </div>
 

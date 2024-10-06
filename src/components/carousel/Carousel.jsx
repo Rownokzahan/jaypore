@@ -28,6 +28,7 @@ const Carousel = ({
   infinite = true,
   showArrows = true,
   autoplayOnHover = false,
+  autoplaySpeed = 2000,
 }) => {
   let sliderRef = useRef(null);
   const play = () => {
@@ -44,7 +45,7 @@ const Carousel = ({
     slidesToShow: slidesToShow,
     slidesToScroll: 1,
     autoplay: autoplayOnHover ? false : autoplay,
-    autoplaySpeed: 2000,
+    autoplaySpeed: autoplaySpeed,
     pauseOnHover: autoplayOnHover ? false : true,
 
     // Custom dot indicators
